@@ -9,3 +9,7 @@ do
     echo $file
     PYTHONPATH=$ODP rst2odp --traceback -r 3 --template-file templates/white.otp src/${file}.rst slides/${file}.odp
 done
+
+# make images
+pygmentize -o /tmp/sample.svg src/sample.html
+pygmentize -o /tmp/css.svg src/css/book.css

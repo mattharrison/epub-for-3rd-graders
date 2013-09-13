@@ -216,3 +216,90 @@ Style first line or letter
         text-transform: uppercase;
       }
 
+
+Values
+--------
+
+Arrangement::
+
+  SELECTOR(S) {
+    PROPERTY:VALUE;
+  }
+
+
+Values (2)
+-----------
+
+* numbers
+
+  * length
+
+    * px, em, pt
+
+  * percentage
+
+* color
+
+  * names
+  * #rgb or #rrggbb
+
+* strings (in quotes)
+
+
+Properties
+------------
+
+Arrangement::
+
+  SELECTOR(S) {
+    PROPERTY:VALUE;
+  }
+
+
+Properties (2)
+---------------
+
+.. class:: tiny
+
+  * Box Model
+
+    * Margins, Padding, Border
+
+  * Formatting
+
+    * width
+    * line-height
+
+  * Colors
+
+    * color, background-color
+
+  * Fonts
+
+    * font-size, font-family, font-variant
+
+  * Text
+
+    * text-indent
+
+  * Paged Media
+
+    * page-break-before, -after, orphan, widow http://www.pigsgourdsandwikis.com/2010/06/goodbye-widows-and-orphans-or-yes-you.html
+
+
+Colors
+-------
+
+Can specify like:
+
+* Decimal - ``rgb(255, 0, 33);``
+* Percent - ``rgb(100%, 0%, 10%);``
+* Hex - ``#ff001a;``
+
+.. class:: tiny
+
+  Example::
+
+    h1 {
+      color: #73ff00;
+    }

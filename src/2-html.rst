@@ -118,34 +118,34 @@ XHTML Elements (2)
 -------------------
 
 .. class:: tiny
-  
+
   * doctype
-   
+
    * html
-  
+
     * head
-    
+
       * title
       * style, link
-  
+
     * body
-  
+
       * h1, h2, h3, h4, h5
       * p
       * img
       * a
       * span
       * div
-      * table 
-      
+      * table
+
         * tr, th
-  
+
           * td
-  
+
       * ol, ul
-      
+
         * li
-    
+
 
 Attributes
 -------------
@@ -155,7 +155,7 @@ Tags can have attributes in them
 .. class:: normal
 
   .. code-block:: html
-  
+
     <style type="text/css" media="screen">
       h1 {color: blue;}
     </style>
@@ -168,11 +168,11 @@ Tells browsers/readers that document is XHTML
 .. class:: normal
 
   .. code-block:: html
-  
+
     <?xml version="1.0" encoding="UTF-8" ?>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-  
-  
+
+
 ``html``
 -------------
 
@@ -181,14 +181,14 @@ Tells browsers/readers that document is XHTML
 .. class:: normal
 
   .. code-block:: html
-  
+
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
       <head>...</head>
       <body>...</body>
     </html>
-  
-  
-  
+
+
+
 ``head``
 -------------
 
@@ -197,12 +197,12 @@ Tells browsers/readers about information about the document (not displayed on pa
 .. class:: normal
 
   .. code-block:: html
-  
+
     <head>
       <title>My Webpage</title>
     </head>
-  
-  
+
+
 ``title``
 -------------
 
@@ -215,7 +215,7 @@ Tells browsers/readers the title of the document.
     <head>
       <title>My Webpage</title>
     </head>
-  
+
 ``style``
 -------------
 
@@ -243,7 +243,7 @@ Tells browsers/readers styling rules in another location. ``main.css`` can have 
     <head>
       <link rel="stylesheet" href="main.css" type="text/css" media="all" />
     </head>
-  
+
 
 ``body``
 -------------
@@ -253,7 +253,7 @@ Tells browsers/readers styling rules in another location. ``main.css`` can have 
 .. class:: normal
 
   .. code-block:: html
-    
+
     <html>
       <body>
         This is the text
@@ -268,7 +268,7 @@ Different heading levels. ``h1`` is largest
 .. class:: normal
 
   .. code-block:: html
-    
+
       <body>
         <h1>Chapter 1</h1>
 	<p>Normal text.</p>
@@ -282,7 +282,7 @@ A text paragraph
 .. class:: normal
 
   .. code-block:: html
-    
+
       <body>
         <h1>Chapter 1</h1>
 	<p>Normal text.</p>
@@ -297,7 +297,7 @@ An image
 .. class:: normal
 
   .. code-block:: html
-    
+
       <p>Normal text.</p>
       <img src="img/face.jpg" />
 
@@ -311,7 +311,7 @@ A hyperlink
 .. class:: normal
 
   .. code-block:: html
-    
+
       <p>Normal text.</p>
       <a href="http://page.com/">Click here</a>
 
@@ -324,7 +324,7 @@ Apply structure to text
 .. class:: normal
 
   .. code-block:: html
-    
+
       <p>Normal text. <span class='red'>OUCH!</span></p>
 
 ``div``
@@ -335,7 +335,7 @@ Allows grouping of elements
 .. class:: normal
 
   .. code-block:: html
-    
+
       <div class="note">
         <h3>A Note</h3>
 	<p>Some text.</p>
@@ -349,7 +349,7 @@ Allows tabular data
 .. class:: normal
 
   .. code-block:: html
-    
+
       <table>
         <th><td>Name</td><td>Age</td></th>
 	<tr><td>Paul</td><td>20</td></tr>
@@ -365,8 +365,23 @@ Allows for ordered list or unordered list
 .. class:: normal
 
   .. code-block:: html
-    
+
       <ul>
+        <li>2009 - 3% ebook</li>
+        <li>2010 - 8% ebook</li>
+        <li>2011 - 20?% ebook</li>
+      </ul>
+
+``em``, ``strong``
+-------------------
+
+Indicates "emphasis" and "strong emphasis"
+
+.. class:: normal
+
+  .. code-block:: html
+
+          <ul>
         <li>2009 - 3% ebook</li>
         <li>2010 - 8% ebook</li>
         <li>2011 - 20?% ebook</li>
